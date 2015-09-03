@@ -6,7 +6,7 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-
+//test
 string makeString (string label, double value, char separator);
 char stringToChar (string value);
 int stringToInt (string value);
