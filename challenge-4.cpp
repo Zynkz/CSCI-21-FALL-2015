@@ -23,6 +23,10 @@ void interactiveTest ();
 void unittest ();
 
 int main (int argc, char* argv[]) {
+	cout.setf(ios::fixed);
+	cout.setf(ios::showpoint);
+	cout.precision(2);
+	
 	string input;
 	cout << "[1] Do interactive test, [2] Skip to unit test: ";
 	getline(cin, input);
@@ -48,6 +52,10 @@ int main (int argc, char* argv[]) {
  *         by a floating-point value
  */
 string makeString (string label, double value, char separator) {
+	ostringstream ostr;
+	ostr<<label<<" "<<separator<<" "<<value;
+	string temp = ostr.str();
+	return temp;
 	// CODE HERE
 }
 
@@ -61,6 +69,10 @@ string makeString (string label, double value, char separator) {
  */
 char stringToChar (string value) {
 	// CODE HERE
+	try{
+		if(value.length()==1)
+			return value.at(0);
+	}catch(ios_base::failure f){}
 }
 
 /*
@@ -95,6 +107,10 @@ int stringToInt (string value) {
  * @return an double representing the value, or 0 on failure
  */
 double stringToDouble (string value) {
+	try{
+		return atof(value.c_str());
+	}catch(ios_base::failure f){}
+	return 0;
 	// CODE HERE
 }
 
@@ -111,6 +127,11 @@ double stringToDouble (string value) {
  */
 bool stringToBool (string value) {
 	// CODE HERE
+	if(value.length()>0 && toupper(value.at(0))=='T'){
+		return true;
+	}else{
+		return false;
+	}
 }
 
 /*
