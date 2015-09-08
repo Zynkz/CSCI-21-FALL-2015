@@ -47,6 +47,29 @@ int main (int argc, char* argv[]) {
 }
 
 // CODE HERE -- FUNCTION DEFINITIONS
+bool processFile(string filename){
+	string line="";
+	fstream fs(filename.c_str());
+	if(!fs.is_open()){
+		return false;
+	}
+	while(getline(fs,line)){
+		if(line=="10"){
+			onTen();
+		}else if(line=="20"){
+			onTwenty();
+		}else if(line=="30"){
+			onThirty();
+		}else if(line=="40"){
+			onForty();
+		}else if(line=="50"){
+			onFifty();
+		}else{
+			onError();
+		}
+	}
+	return true;
+}
 
 /*
  * Unit testing functions. Do not alter.
