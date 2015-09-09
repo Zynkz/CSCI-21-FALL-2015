@@ -53,6 +53,7 @@ bool processFile(string filename){
 	if(!fs.is_open()){
 		return false;
 	}
+	cout<<"This is for a test";
 	while(getline(fs,line)){
 		if(line=="10"){
 			onTen();
