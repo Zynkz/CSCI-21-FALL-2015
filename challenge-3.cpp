@@ -2,7 +2,7 @@
  * Programming Challenge 3 from 1 Sep
  *
  * Written by Dylan Hall
- *Created on Aug 27
+ * Created on Aug 27
  *
  * References:
  */

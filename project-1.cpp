@@ -1,5 +1,9 @@
 /*
  * Programming Project 1
+ * Written by Dylan Hall
+ * Created on Sep 15 2015
+ *
+ * References:
  */
 #include <cassert>
 #include <climits>

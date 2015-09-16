@@ -1,5 +1,9 @@
 /*
  * Programming Challenge 7
+ * Written by Dylan Hall
+ * Created on Sep 15 2015
+ *
+ * References:
  */
 #include <cassert>
 #include <fstream>
@@ -50,7 +54,7 @@ int main (int argc, char* argv[]) {
 bool processFile(string filename){
 	string line="";
 	fstream fs(filename.c_str());
-	if(!fs.is_open()){
+	if(!fs.good()){
 		return false;
 	}
 	cout<<"This is for a test";

@@ -1,5 +1,9 @@
 /*
  * Programming Challenge 8
+ * Written by Dylan Hall
+ * Created on Sep 15 2015
+ *
+ * References:
  */
 #include <cassert>
 #include <cstring>

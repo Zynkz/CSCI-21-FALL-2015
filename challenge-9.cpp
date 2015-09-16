@@ -1,5 +1,9 @@
 /*
  * Programming Challenge 9
+ * Written by Dylan Hall
+ * Created on Sep 15 2015
+ *
+ * References:
  */
 #include <cassert>
 #include <iomanip>
@@ -118,9 +122,9 @@ int Spaceship::getCrewCapacity() const{
 
 string Spaceship::toString () const{
 	ostringstream ss;
-	cout.setf(ios::fixed);
-	cout.setf(ios::showpoint);
-	cout.precision(2);
+	ss.setf(ios::fixed);
+	ss.setf(ios::showpoint);
+	ss.precision(2);
 	ss<<getName()<<", top speed: warp "<<getTopSpeed()<<", fuel source: "<<getFuelSource()<<", crew capacity: "<<getCrewCapacity();
 	return ss.str();
 }
@@ -190,6 +194,7 @@ void unittest () {
 	}
 	
 	try {
+		cout<<enterprise.toString();
 		btassert<bool>(enterprise.toString() == 
 							"USS Enterprise, top speed: warp 9.60, fuel source: plasma, crew capacity: 5000");
 		cout << "Passed TEST 5: toString\n";
