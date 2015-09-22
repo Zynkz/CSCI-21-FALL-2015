@@ -94,7 +94,7 @@ unsigned int countChars (string* theString, unsigned int& alpha, unsigned int& n
 	if(theString==NULL)
 		throw ArrayException("NULL STRING REFERENCE");
 	else
-		for(int i=0;i<theString->length();i++){
+		for(unsigned int i=0;i<theString->length();i++){
 			if(isalpha((*theString)[i],loc))
 				alpha++;
 			else if(isdigit((*theString)[i],loc))
@@ -114,7 +114,7 @@ bool findWord (string* theString, string theWord){
 bool replaceWord (string* theString, string oldWord, string newWord){
 	if(theString==NULL)
 		throw ArrayException("NULL STRING REFERENCE");
-	else if(theString->find(oldWord)==-1)
+	else if(theString->find(oldWord)==string::npos)
 		return false;
 	theString->replace(theString->find(oldWord),oldWord.length(),newWord);
 	return true;

@@ -112,14 +112,12 @@ unsigned int ShoppingList::getItemCount() const{
 }
 
 bool ShoppingList::addItem(string theItem){
-    if(itemCount<maxItems)
-        for(int i=0;i<maxItems;i++){
-            if(items[i]=="")
-                items[i]=theItem;
-                itemCount++;
-                return true;
-        }
-        return false;
+    if(itemCount<maxItems){
+      items[itemCount]=theItem;
+      itemCount++;
+      return true;
+    }
+    return false;
 }
 
 string ShoppingList::getItem(unsigned int index) const{
