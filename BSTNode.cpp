@@ -2,7 +2,7 @@
 
 //default constructor
     //initialize: leftChild to NULL :: rightChild to NUll :: contents to 0
-    BSTNode::BSTNode(){
+    BSTNode(){
         leftChild=NULL;
         rightChild=NULL;
         contents=0;
