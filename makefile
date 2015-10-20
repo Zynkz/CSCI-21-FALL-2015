@@ -1,14 +1,14 @@
 CC = g++
 CFLAG = -c -Wall
 
-test-24: challenge-24-unittest.o
-	$(CC) challenge-24-unittest.o -o test-24
+test-24: challenge-24-unittest.o BSTNode.o
+	$(CC) challenge-24-unittest.o BSTNode.o -o test-24
 
 challenge-24-unittest.o: challenge-24-unittest.cpp BSTNode.h
 	$(CC) $(CFLAG) challenge-24-unittest.cpp
 
 BSTNode.o: BSTNode.cpp BSTNode.h
-	&(CC) &(CFLAG) BSTNode.cpp;
+	$(CC) $(CFLAG) BSTNode.cpp;
 
 clean:
 	\rm *.o test-24
