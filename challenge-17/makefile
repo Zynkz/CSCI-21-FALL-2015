@@ -14,5 +14,10 @@ clean:
 	\rm *.o test-17
 
 togithub:
+<<<<<<< HEAD
 	\cp *.cpp ../../toGitHub/challenge-17/
 	\cp *.h ../../toGitHub/challenge-17/
+=======
+	\cp *.cpp ../../toGitHub
+	\cp *.h ../../toGitHub
+>>>>>>> upstream/master

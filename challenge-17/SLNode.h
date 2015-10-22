@@ -5,6 +5,22 @@
 #include <cstdlib>
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
+=======
+
+/*default constructor, sets values nextNode(NULL) and contents(0)
+	overloaded constructor, int parameter assigned to contents
+	
+	destructor, sets nextNode to NULL
+	
+	void setContents (int)
+	int getContents () const
+	
+	void setNextNode (SLNode*)
+	
+	SLNode* getNextNode () const
+*/
+>>>>>>> upstream/master
 class SLNode{
 	public:
 	    //default constructor
