@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#include "SLNode.h"
-=======
 #ifndef SLNode_H
 #define SLNode_H
 
@@ -60,7 +57,6 @@ class SLNode{
 };
 
 #endif
->>>>>>> upstream/master
 
 //default constructor
 //Initialize: nextNode to NULL :: contents to 0
