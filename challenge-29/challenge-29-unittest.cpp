@@ -4,6 +4,7 @@
  * add code for each numbered item in each of the unit tests
  * comment out TEST_CASEs as need to build in increments
  *
+ * Dylan Hall 12/8/15
  */
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
