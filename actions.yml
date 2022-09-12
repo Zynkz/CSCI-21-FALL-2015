@@ -20,4 +20,4 @@ on:
       - uses: action/checkout@v2
       - name: Build project
         run: |
-          g++ main.cpp -std+c++17 -o firstIO
+          g++ main.cpp -std+c++17 -o project-1.cpp
