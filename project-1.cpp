@@ -28,7 +28,7 @@ int main (int argc, char* argv[]) {
 	
 	return 0;
 }
-
+//
 /*
 * count the number of alphabetic characters and the number of numeric
 * characters in a string
