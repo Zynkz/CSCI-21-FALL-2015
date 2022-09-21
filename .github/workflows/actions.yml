@@ -20,4 +20,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build project
         run: |
-          g++ project-1.cpp -std=c++17 -o csci-fall-2015
+          g++ project-1.cpp -std=c++17 -o firstIO
